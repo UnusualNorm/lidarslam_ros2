@@ -25,7 +25,7 @@ def generate_launch_description():
         package='scanmatcher',
         executable='scanmatcher_node',
         parameters=[main_param_dir],
-        remappings=[('/input_cloud','/velodyne_points')],
+        remappings=[('/input_cloud','/points_raw')],
         output='screen'
         )
 
@@ -56,7 +56,7 @@ def generate_launch_description():
             default_value=main_param_dir,
             description='Full path to main parameter file to load'),
         mapping,
-        tf,
+        # tf,
         graphbasedslam,
         rviz,
             ])

@@ -26,6 +26,7 @@ scan_matcher:
     use_imu: false
     use_odom: false
     debug_flag: false
+    use_sim_time: true
 
 graph_based_slam:
     ros__parameters:
@@ -41,4 +42,5 @@ graph_based_slam:
       num_adjacent_pose_cnstraints: 5
       use_save_map_in_loop: true
       debug_flag: true
+      use_sim_time: true
 
